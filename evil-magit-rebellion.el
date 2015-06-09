@@ -169,23 +169,25 @@
   (kbd "C-x 4 a")    'magit-add-change-log-entry-other-window
   (kbd "\M-d") 'magit-copy-item-as-kill)
 
+;; Symbol's value as variable is void: magit-rigid-key-bindings
+;;
 ;; Redefine some bindings if rigid key bindings are expected
-(when magit-rigid-key-bindings
-  (evil-define-key 'motion magit-mode-map
-    "!" 'magit-git-command-topdir
-    "B" 'undefined
-    "F" 'magit-pull
-    "J" 'magit-apply-mailbox
-    "M" 'magit-branch-manager
-    "P" 'magit-push
-    "b" 'magit-checkout
-    "c" 'magit-commit
-    "f" 'magit-fetch-current
-    "h" 'undefined
-    "l" 'magit-log
-    "m" 'magit-merge
-    "o" 'magit-submodule-update
-    "t" 'magit-tag
-    "z" 'magit-stash))
+;; (when magit-rigid-key-bindings
+;;   (evil-define-key 'motion magit-mode-map
+;;     "!" 'magit-git-command-topdir
+;;     "B" 'undefined
+;;     "F" 'magit-pull
+;;     "J" 'magit-apply-mailbox
+;;     "M" 'magit-branch-manager
+;;     "P" 'magit-push
+;;     "b" 'magit-checkout
+;;     "c" 'magit-commit
+;;     "f" 'magit-fetch-current
+;;     "h" 'undefined
+;;     "l" 'magit-log
+;;     "m" 'magit-merge
+;;     "o" 'magit-submodule-update
+;;     "t" 'magit-tag
+;;     "z" 'magit-stash))
 
 (provide 'evil-magit-rebellion)
