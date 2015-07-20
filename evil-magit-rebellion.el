@@ -190,4 +190,22 @@
 ;;     "t" 'magit-tag
 ;;     "z" 'magit-stash))
 
+(evil-define-key 'motion magit-hunk-section-map
+  "k" 'magit-section-backward)
+(evil-define-key 'motion magit-file-section-map
+  "k" 'magit-section-backward)
+(evil-define-key 'motion magit-unstaged-section-map
+  "k" 'magit-section-backward)
+(evil-define-key 'motion magit-staged-section-map
+  "k" 'magit-section-backward)
+(evil-define-key 'motion magit-untracked-section-map
+  "k" 'magit-section-backward)
+
+(define-key magit-mode-map (kbd "k") #'magit-section-backward)
+(define-key magit-hunk-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-file-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-unstaged-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-staged-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-untracked-section-map (kbd "k") #'magit-section-backward)
+
 (provide 'evil-magit-rebellion)
