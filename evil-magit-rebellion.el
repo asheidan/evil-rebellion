@@ -89,9 +89,9 @@
   "\M-s" 'magit-show-level-4
   "!" 'magit-key-mode-popup-running
   "$" 'magit-process
-  "+" 'magit-diff-larger-hunks
-  "-" 'magit-diff-smaller-hunks
-  "=" 'magit-diff-default-hunks
+  "+" 'magit-diff-more-context
+  "-" 'magit-diff-less-context
+  "=" 'magit-diff-default-context
   "/" 'evil-search-forward
   ":" 'evil-ex
   ";" 'magit-git-command
@@ -162,10 +162,10 @@
   ;z  position current line
   " " 'magit-show-item-or-scroll-up
   "\d" 'magit-show-item-or-scroll-down
-  "\t" 'magit-toggle-section
+  "\t" 'magit-section-toggle
   (kbd "<return>")   'magit-visit-item
   (kbd "C-<return>") 'magit-dired-jump
-  (kbd "<backtab>")  'magit-expand-collapse-section
+  (kbd "<backtab>")  'magit-section-toggle
   (kbd "C-x 4 a")    'magit-add-change-log-entry-other-window
   (kbd "\M-d") 'magit-copy-item-as-kill)
 
