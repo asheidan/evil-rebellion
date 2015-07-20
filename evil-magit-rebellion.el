@@ -96,23 +96,23 @@
   ":" 'evil-ex
   ";" 'magit-git-command
   "?" 'evil-search-backward
-  "<" 'magit-key-mode-popup-stashing
+  "<" 'magit-stash-popup
   "A" 'magit-cherry-pick-item
-  "B" 'magit-key-mode-popup-bisecting
+  "B" 'magit-bisect-popup
   ;C  commit add log
   "D" 'magit-revert-item
   "E" 'magit-ediff
-  "F" 'magit-key-mode-popup-pulling
+  "F" 'magit-pull-popup
   "G" 'evil-goto-line
   "H" 'magit-rebase-step
   ;I  ignore item locally
   "J" 'magit-key-mode-popup-apply-mailbox
-  "K" 'magit-key-mode-popup-dispatch
+  "K" 'magit-dispatch-popup
   "L" 'magit-add-change-log-entry
-  "M" 'magit-key-mode-popup-remoting
+  "M" 'magit-remote-popup
   "N" 'evil-search-previous
   ;O  undefined
-  "P" 'magit-key-mode-popup-pushing
+  "P" 'magit-push-popup
   ;Q  undefined
   "R" 'magit-refresh-all
   "S" 'magit-stage-all
@@ -122,13 +122,13 @@
   "W" 'magit-diff-working-tree
   "X" 'magit-reset-working-tree
   "Y" 'magit-interactive-rebase
-  "Z" 'magit-key-mode-popup-stashing
+  "Z" 'magit-stash-popup
   "a" 'magit-apply-item
-  "b" 'magit-key-mode-popup-branching
-  "c" 'magit-key-mode-popup-committing
+  "b" 'magit-branch-popup
+  "c" 'magit-commit-popup
   ;d  discard
   "e" 'magit-diff
-  "f" 'magit-key-mode-popup-fetching
+  "f" 'magit-fetch-popup
   "g?" 'magit-describe-item
   "g$" 'evil-end-of-visual-line
   "g0" 'evil-beginning-of-visual-line
@@ -143,12 +143,12 @@
   "gm" 'evil-middle-of-visual-line
   "h" 'magit-key-mode-popup-rewriting
   ;i  ignore item
-  "j" 'magit-goto-next-section
-  "k" 'magit-goto-previous-section
-  "l" 'magit-key-mode-popup-logging
-  "m" 'magit-key-mode-popup-merging
+  "j" 'magit-section-forward
+  "k" 'magit-section-backward
+  "l" 'magit-log-popup
+  "m" 'magit-merge-popup
   "n" 'evil-search-next
-  "o" 'magit-key-mode-popup-submodule
+  "o" 'magit-submodule-popup
   "p" 'magit-cherry
   "q" 'magit-mode-quit-window
   "r" 'magit-refresh
