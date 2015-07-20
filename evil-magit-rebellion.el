@@ -150,7 +150,7 @@
   "n" 'evil-search-next
   "o" 'magit-submodule-popup
   "p" 'magit-cherry
-  "q" 'magit-mode-quit-window
+  "q" 'magit-mode-bury-buffer
   "r" 'magit-refresh
   ;s  stage
   "t" 'magit-key-mode-popup-tagging
