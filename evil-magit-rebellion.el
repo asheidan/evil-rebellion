@@ -200,6 +200,12 @@
   "k" 'magit-section-backward)
 (evil-define-key 'motion magit-untracked-section-map
   "k" 'magit-section-backward)
+(evil-define-key 'motion magit-branch-section-map
+  "k" 'magit-section-backward)
+(evil-define-key 'motion magit-remote-section-map
+  "k" 'magit-section-backward)
+(evil-define-key 'motion magit-tag-section-map
+  "k" 'magit-section-backward)
 
 (define-key magit-mode-map (kbd "k") #'magit-section-backward)
 (define-key magit-hunk-section-map (kbd "k") #'magit-section-backward)
@@ -207,5 +213,8 @@
 (define-key magit-unstaged-section-map (kbd "k") #'magit-section-backward)
 (define-key magit-staged-section-map (kbd "k") #'magit-section-backward)
 (define-key magit-untracked-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-branch-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-remote-section-map (kbd "k") #'magit-section-backward)
+(define-key magit-tag-section-map (kbd "k") #'magit-section-backward)
 
 (provide 'evil-magit-rebellion)
