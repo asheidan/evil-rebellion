@@ -46,7 +46,7 @@
   "S" 'magit-stage-all
   "U" 'magit-unstage-all
   "X" 'magit-reset-working-tree
-  "d" 'magit-discard-item
+  "d" 'magit-discard
   "i" 'magit-ignore-item
   "s" 'magit-stage-item
   "u" 'magit-unstage-item
@@ -68,7 +68,7 @@
 (evil-define-key 'motion magit-branch-manager-mode-map
   "a" 'magit-add-remote
   "c" 'magit-rename-item
-  "d" 'magit-discard-item
+  "d" 'magit-discard
   "o" 'magit-create-branch
   "v" 'magit-show-branches
   "T" 'magit-change-what-branch-tracks)
