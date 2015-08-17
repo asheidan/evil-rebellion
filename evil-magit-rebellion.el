@@ -101,7 +101,7 @@
   "B" 'magit-bisect-popup
   ;C  commit add log
   "D" 'magit-revert-item
-  "E" 'magit-ediff
+  "E" 'magit-ediff-popup
   "F" 'magit-pull-popup
   "G" 'evil-goto-line
   "H" 'magit-rebase-step
